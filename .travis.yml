@@ -1,2 +1,3 @@
+sudo: required
 before_install:
-  - update-ca-certificates
+  - sudo update-ca-certificates
