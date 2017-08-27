@@ -6,6 +6,10 @@ task :build do
   `bundle exec jekyll build`
 end
 
+task :s do
+  sh 'bundle exec jekyll serve'
+end
+
 task :test do
   sh 'bundle exec jekyll build'
   options = { assume_extension: true }

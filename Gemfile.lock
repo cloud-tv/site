@@ -226,7 +226,6 @@ DEPENDENCIES
   github-pages (= 156)
   html-proofer
   jekyll-feed (~> 0.6)
-  minima (~> 2.0)
   rake
 
 BUNDLED WITH
