@@ -15,6 +15,9 @@ require 'open-uri'
 versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 gem 'github-pages', versions['github-pages']
 
+gem 'rake'
+gem 'html-proofer'
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
