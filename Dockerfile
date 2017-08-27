@@ -1,5 +1,5 @@
 FROM ruby:2.4.1
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8 NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 # Install gems
 RUN ["gem", "install", "bundler"]
