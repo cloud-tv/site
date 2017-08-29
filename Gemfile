@@ -14,6 +14,7 @@ gem 'github-pages', versions['github-pages']
 
 gem 'rake'
 gem 'html-proofer'
+gem 'scss_lint'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

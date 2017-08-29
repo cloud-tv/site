@@ -12,6 +12,12 @@ markdown: kramdown
 
 google_analytics: UA-440161-15
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
 defaults:
   -
     scope:
