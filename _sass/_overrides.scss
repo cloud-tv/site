@@ -1,2 +1,23 @@
 $enable-shadows: true;
 $enable-gradients: true;
+
+$custom-file-text: (
+  placeholder: (
+    ru: 'Выберите файл...'
+  ),
+  button-label: (
+    ru: 'Выбрать'
+  )
+) !default;
+
+$white:  #fff !default;
+$theme-colors: (
+  primary: $white
+  // secondary: $gray-600,
+  // success: $green,
+  // info: $cyan,
+  // warning: $yellow,
+  // danger: $red,
+  // light: $gray-100,
+  // dark: $gray-800
+) !default;
