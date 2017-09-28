@@ -53,16 +53,21 @@ $colors: (
   gray-dark: $gray-800
 ) !default;
 
+// my custom colours
+$blue: hsl(212, 45, 50);
+$dark-blue: hsl(212, 44, 33);
+$light-blue: hsl(212, 88, 78);
+
 $theme-colors: (
-  primary: $white,
-  secondary: $gray-600,
-  success: $green,
+  primary: $blue,
+  secondary: $dark-blue,
+  success: $light-blue,
   info: $cyan,
   warning: $yellow,
   danger: $red,
-  light: $gray-100,
-  dark: $gray-800
-) !default;
+  light: $gray-300,
+  dark: #152436
+);
 
 // my stuff
 
@@ -77,3 +82,21 @@ $custom-file-text: (
     ru: 'Выбрать'
   )
 ) !default;
+
+$headings-font-family: 'Arsenal', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
+
+// This maybe should be moved to a separate font-family-base
+
+// FONTS
+
+// https://stackoverflow.com/a/23610466/5274538
+.lines {
+  &::after,
+  &::before {
+    content: '\00a0\00a0\00a0\00a0\00a0\00a0';
+    font-family: monospace;
+    padding: .5em;
+    text-decoration: line-through;
+  }
+}
