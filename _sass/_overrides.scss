@@ -91,9 +91,12 @@ $font-family-base: 'Open Sans', sans-serif;
 // FONTS
 
 // https://stackoverflow.com/a/23610466/5274538
+// scss-lint:disable PlaceholderInExtend
 .lines {
   &::after,
   &::before {
+    @extend .d-none;
+    @extend .d-sm-inline;
     content: '\00a0\00a0\00a0\00a0\00a0\00a0';
     font-family: monospace;
     padding: .5em;

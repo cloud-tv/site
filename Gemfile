@@ -6,11 +6,13 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 
+gem 'jekyll'
+
 # http://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages
-require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-gem 'github-pages', versions['github-pages']
+# require 'json'
+# require 'open-uri'
+# versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+# gem 'github-pages', versions['github-pages']
 
 gem 'rake'
 gem 'html-proofer'
@@ -18,5 +20,5 @@ gem 'scss_lint'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem 'jekyll-feed', '~> 0.6'
+  gem 'jekyll-feed', '~> 0.6'
 end

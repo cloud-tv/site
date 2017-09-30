@@ -1,3 +1,7 @@
 exclude:
   - 'vendor/**/*'
   - 'assets/main.scss'
+
+linters:
+  PlaceholderInExtend:
+    enabled: false
