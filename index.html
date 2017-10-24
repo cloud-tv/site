@@ -3,8 +3,26 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
+features:
+  - title: Каналы
+    description: Создайте один или несколько каналов, загрузите видео и решайте, на каких экранах какой контент показывать.
+    image_url: /assets/images/remote-control.svg
+    image_alt: Каналы
+  - title: Реклама
+    description: Загружайте рекламные ролики и указывайте частоту воспроизведения. Рекламные блоки сформируются автоматически.
+    image_url: /assets/images/megaphone.svg
+    image_alt: Реклама
+  - title: Расписание
+    description: При желании, укажите дату начала и окончания воспроизведения.
+    image_url: /assets/images/schedule.svg
+    image_alt: Расписание
+  - title: Работа off-line
+    description: Все загруженные видеоролики воспроизводятся вне зависимости от скорости и стабильности Интернета.
+    image_url: /assets/images/offline.svg
+    image_alt: Off-line
 ---
 {% include jumbotron.html %}
 {% include features.html %}
 {% include how-it-works.html %}
 {% include price.html %}
+{% include clients.html %}

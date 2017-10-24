@@ -11,6 +11,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 
 google_analytics: UA-440161-15
+yandex_metrika: 46393494
 
 exclude:
   - Gemfile
