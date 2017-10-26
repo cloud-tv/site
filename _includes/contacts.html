@@ -1,0 +1,47 @@
+<section id="price" class="pb-5 bg-light">
+  <div class="container">
+    <h2 class="text-primary lines text-center py-5">Контакты</h2>
+    <div class="row">
+      <div id="map" class="col-6" style="height: 30vh">
+        <script type="text/javascript">
+          ymaps.ready(init);
+          var myMap, myPlacemark;
+
+          function init(){
+            myMap = new ymaps.Map("map", {
+              center: [55.74529057, 37.59432400],
+              zoom: 14,
+              controls: []
+            });
+
+            myPlacemark = new ymaps.Placemark(
+              [55.74529057, 37.59432400],
+              {
+                balloonContent: '<b>Cloud TV</b><br>Гагаринский переулок, д. 16',
+                iconContent: 'Cloud TV',
+              },
+              { preset: 'islands#blueStretchyIcon' }
+            );
+
+            myMap.geoObjects.add(myPlacemark);
+            myMap.behaviors.disable(
+              [
+                'drag',
+                'dblClickZoom',
+                'ruler',
+                'rightMouseButtonMagnifier',
+                'scrollZoom',
+                'multiTouch'
+              ]
+            );
+          }
+        </script>
+      </div>
+      <div class="col-6">
+        <p class="h3">Компания Cloud TV</p>
+        <p>119002, Москва, Гагаринский переулок, 16</p>
+        <a href="tel:+7 926 175 90 77">+7 926 175 90 77</a>
+      </div>
+    </div>
+  </div>
+</section>
